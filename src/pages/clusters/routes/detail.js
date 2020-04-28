@@ -31,6 +31,7 @@ import ProjectDetail from '../containers/Projects/Detail'
 import StorageClassDetail from '../containers/Storage/StorageClasses/Detail'
 import VolumeSnapshotsDetail from '../containers/Storage/VolumeSnapshots/Detail'
 import Volume from '../containers/Storage/Volumes/Detail'
+import IPRangesDetail from '../containers/Network/IPRanges/Detail'
 
 const PATH = '/clusters/:cluster'
 
@@ -98,5 +99,9 @@ export default [
   {
     path: `${PATH}/projects/:namespace`,
     component: ProjectDetail,
+  },
+  {
+    path: `${PATH}/ip-ranges/:rangeName`,
+    component: IPRangesDetail,
   },
 ]

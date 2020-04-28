@@ -42,6 +42,8 @@ import ResourceMonitor from '../containers/Monitor/Resource'
 import Members from '../containers/Members'
 import Roles from '../containers/Roles'
 import Visibility from '../containers/Visibility'
+import IPRanges from '../containers/Network/IPRanges'
+import Policies from '../containers/Network/Policies'
 
 import detail from './detail'
 
@@ -155,6 +157,16 @@ export default [
       {
         path: `${PATH}/snapshots/:namespace?`,
         component: VolumeSnapshots,
+      },
+      {
+        path: `${PATH}/ip-ranges`,
+        component: IPRanges,
+        exact: true,
+      },
+      {
+        path: `${PATH}/network-policies`,
+        component: Policies,
+        exact: true,
       },
       getIndexRoute({ path: PATH, to: `${PATH}/overview`, exact: true }),
       getIndexRoute({

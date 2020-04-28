@@ -222,6 +222,7 @@ export const ICON_TYPES = {
   s2ibuilders: 'vnas',
   apps: 'appcenter',
   'volume-snapshots': 'snapshot',
+  network: 'eip-group',
 }
 
 export const MODULE_KIND_MAP = {

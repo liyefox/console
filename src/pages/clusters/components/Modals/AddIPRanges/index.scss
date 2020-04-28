@@ -1,0 +1,49 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+.ipadd {
+  display: flex;
+  align-items: center;
+}
+.cidcols {
+  box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
+  border: 1px solid $light-color06;
+  background-color: $light-color02;
+  border-radius: 22px;
+  margin: 8px 0 0 0px;
+  padding: 0 12px;
+}
+.cidcol {
+  padding: 6px;
+}
+
+.wrapper {
+  padding: 12px;
+  border-radius: $border-radius;
+  background-color: $light-color01;
+}
+
+.step {
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  & + .step {
+    margin-top: 12px;
+  }
+
+  pre {
+    padding: 8px;
+    margin-top: 12px;
+    background-color: $dark-color07;
+    border-radius: $border-radius;
+    word-break: break-all;
+
+    code {
+      font-family: Monaco;
+      color: #fff;
+      line-height: 2;
+    }
+  }
+}
